@@ -1,0 +1,153 @@
+@media (max-width: 867px) {
+
+    .header {
+        min-height: unset;
+    }
+
+    .header__contetn {
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+
+    .header__badge {
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+
+    .header__subtitle {
+        font-weight: 400;
+        font-size: 44px;
+        line-height: 70px;
+        margin-bottom: 20px;
+    }
+
+    .header__descr {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+
+    .header__content-btn {
+        font-size: 18px;
+        padding: 20px 25px;
+    }
+
+    .destinations {
+
+        padding-bottom: 70px;
+    }
+
+    .destinations__title-top {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .destinations__title-bottom {
+        font-size: 45px;
+    }
+
+    .destinations__descr {
+
+        font-size: 23px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+
+    .destinations__btn {
+        font-size: 18px;
+        padding: 20px 25px;
+    }
+
+    .customers__container {
+        padding-bottom: 50px;
+    }
+
+    .customers__titile {
+        font-size: 38px;
+        line-height: 48px;
+        margin-bottom: 20px;
+    }
+
+    .customers__img {
+        width: 100px;
+        height: 100px;
+        margin-right: 13px;
+    }
+
+
+
+    .customers__name {
+        font-size: 23px;
+        margin-bottom: 8px;
+    }
+
+    .customers__country {
+        font-size: 18px;
+    }
+
+    .customers__user {
+        margin-bottom: 30px;
+    }
+
+    .customers__descr {
+        font-size: 19px;
+        line-height: 28px;
+        margin-bottom: 0px;
+    }
+
+    .customers__star:not(:last-child) {
+        margin-right: 9px;
+    }
+
+    .yourself {
+        padding-bottom: 40px;
+    }
+
+    .yourself__content {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .yourself__tittle {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 55px;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    .yourself__descr {
+        font-size: 25px;
+        line-height: 35px;
+        margin-bottom: 30px;
+    }
+
+    .yourself__btn {
+        font-size: 18px;
+        padding: 20px 25px;
+    }
+
+    .subscribe__title {
+        font-size: 44px;
+        line-height: 60px;
+        margin-bottom: 30px;
+    }
+
+    .form {
+        width: 80%;
+    }
+
+    .form__btn {
+        font-size: 22px;
+        padding: 20px 64px;
+        border-radius: 35px;
+    }
+
+    .form__input {
+        font-size: 22px;
+    }
+
+    .footer__singup {
+        margin-right: 20px;
+    }
+}

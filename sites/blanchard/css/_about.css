@@ -1,0 +1,14 @@
+.about__container {
+    padding-top: 53px;
+    padding-bottom: 41px;
+}
+
+.about__title {
+    margin-bottom: 15px;
+}
+
+.about__descr {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+}

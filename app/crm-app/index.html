@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./libs/normalize.css">
+    <script src="./libs/poropper.js"></script>
+    <script src="./libs/tippy.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./scripj.js"></script>
+    <title>CRM</title>
+</head>
+
+<body>
+    <div class="container crm" id="crm">
+        <div class="crm__header">
+            <a href="#" class="crm__link">
+                <h1 class="crm__title">skb.</h1>
+            </a>
+            <input type="text" class="crm__input" placeholder="Введите запрос">
+        </div>
+        <div class="crm__body">
+            <h2 class="crm__subtitle">
+                Клиенты
+            </h2>
+            <div class="crm__table">
+                <table class="table">
+                    <thead class="thead">
+                        <tr class="tr">
+                            <th class="th th-id">
+                                <button class="filtered id active">
+                                    ID <svg class="arrow table__svg active" width="8" height="8" viewBox="0 0 8 8"
+                                        fill="#9873FF">
+                                        <path
+                                            d="M8 4L7.295 3.295L4.5 6.085L4.5 0L3.5 0L3.5 6.085L0.71 3.29L0 4L4 8L8 4Z" />
+                                    </svg>
+                                </button>
+                            </th>
+                            <th class="th th-fio">
+                                <button class="filtered fio">Фамилия Имя Отчество <svg class="arrow table__svg"
+                                        width="8" height="8" viewBox="0 0 8 8" fill="#9873FF">
+                                        <path
+                                            d="M8 4L7.295 3.295L4.5 6.085L4.5 0L3.5 0L3.5 6.085L0.71 3.29L0 4L4 8L8 4Z" />
+                                    </svg> <span class="alphabet">А-Я</span></button>
+                            </th>
+                            <th class="th th-create">
+                                <button class="filtered create"> Дата и время <br> создания <svg
+                                        class="arrow table__svg" width="8" height="8" viewBox="0 0 8 8" fill="#9873FF">
+                                        <path
+                                            d="M8 4L7.295 3.295L4.5 6.085L4.5 0L3.5 0L3.5 6.085L0.71 3.29L0 4L4 8L8 4Z" />
+                                    </svg></button>
+                            </th>
+                            <th class="th th-change">
+                                <button class="filtered update"> Последние <br> изменения <svg class="arrow table__svg"
+                                        width="8" height="8" viewBox="0 0 8 8" fill="#9873FF">
+                                        <path
+                                            d="M8 4L7.295 3.295L4.5 6.085L4.5 0L3.5 0L3.5 6.085L0.71 3.29L0 4L4 8L8 4Z" />
+                                    </svg></button>
+                            </th>
+                            <th class="th th-contacts">
+                                Контакты
+                            </th>
+                            <th class="th th-action">
+                                Действия
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody"></tbody>
+                </table>
+            </div>
+            <div class="table-load">
+                <svg class="spinner" viewBox="0 0 50 50">
+                    <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="4"></circle>
+                </svg>
+            </div>
+        </div>
+        <button class="crm__add-btn"><svg class="crm__add-svg" width="23" height="16" viewBox="0 0 23 16"
+                fill="#9873FF">
+                <path
+                    d="M14.5 8C16.71 8 18.5 6.21 18.5 4C18.5 1.79 16.71 0 14.5 0C12.29 0 10.5 1.79 10.5 4C10.5 6.21 12.29 8 14.5 8ZM5.5 6V3H3.5V6H0.5V8H3.5V11H5.5V8H8.5V6H5.5ZM14.5 10C11.83 10 6.5 11.34 6.5 14V16H22.5V14C22.5 11.34 17.17 10 14.5 10Z" />
+            </svg> Добавить клиента</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+@media (max-width: 1023px) {
+
+
+
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .header {
+        min-height: 850px;
+    }
+
+    .header__contetn {
+        position: relative;
+        padding-top: 85px;
+        padding-bottom: 100px;
+        max-width: 75%;
+    }
+
+    .header__img {
+        max-width: 65%;
+        background-image: none;
+    }
+
+    .destinations {
+        padding-top: 25px;
+        padding-bottom: 100px;
+    }
+
+    .destinations__conainer {
+        flex-direction: column;
+    }
+
+    .destinations__content {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .destinations__descr {
+        margin-bottom: 30px;
+    }
+
+    .destinations__swiper-container {
+        position: static;
+    }
+
+    .swiper {
+        width: 100%;
+    }
+
+    .swiper-btn {
+        top: 68%;
+    }
+
+    .swiper-button-left {
+        left: 0px;
+    }
+
+    .swiper-button-right {
+        right: 0px;
+        display: block;
+    }
+
+    .customers__container {
+        padding-bottom: 100px;
+    }
+
+    .yourself {
+        padding-bottom: 70px;
+    }
+
+    .yourself__content {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .form {
+        width: 80%;
+    }
+
+    .swiper .swiper-slide {
+        width: auto;
+
+    }
+
+    .swiper-slide.swiper-slide-next {
+        height: auto;
+    }
+
+    .swiper-slide.swiper-img.swiper-slide-active {
+        height: 460px;
+    }
+
+}

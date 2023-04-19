@@ -1,0 +1,168 @@
+.contact__container {
+    padding-top: 52px;
+}
+
+.contact__top {
+    margin-bottom: 16px;
+}
+
+.contact__title {
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.contact__address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.contact__input {
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid var(--black-color);
+    border-radius: 100px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 20px;
+    transition: border-color .2s ease-in-out, background-color .2s ease-in-out;
+}
+
+.contact__input:focus-visible {
+    outline: none;
+    background-color: #eaeaea;
+}
+
+.contact__btn {
+    position: relative;
+    border: 2px solid var(--violet);
+    padding: 12px 35px;
+    color: var(--violet);
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 100px;
+    transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+}
+
+.contact__btn::after {
+    content: 'Заказать';
+    position: relative;
+}
+
+.contact__btn:focus-visible {
+    outline: none;
+}
+
+.contact__btn::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    z-index: 20;
+    transition: left .2s ease-in-out, top .2s ease-in-out, right .2s ease-in-out, bottom .2s ease-in-out, border-color .2s ease-in-out, background-color .2s ease-in-out;
+}
+
+
+.contact__btn:focus-visible.contact__btn::before {
+    border-color: var(--violet);
+    left: -5px;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+}
+
+.contact__btn:active {
+    color: var(--white-color);
+    background-color: var(--violet-darck);
+    border-color: var(--violet-light);
+}
+
+.contact__btn:active.contact__btn::before {
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.contact__descr {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.contact__lable {
+    position: relative;
+    width: inherit;
+    max-width: 300px;
+}
+
+.contact__input.just-validate-error-field {
+    border-color: red;
+}
+
+.just-validate-error-label {
+    position: absolute;
+    font-size: 12px;
+    top: -16px;
+    padding-left: 20px;
+}
+
+.massager {
+    display: flex;
+}
+
+.massager__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+
+.massager__link {
+
+    display: block;
+    font-size: 0;
+    border-radius: 100px;
+    border: 1px solid transparent;
+    transition: opacity .2s ease-in-out, border-color .2s ease-in-out;
+}
+
+.massager__link:focus-visible {
+    outline: none;
+    opacity: .5;
+}
+
+.massager__link:active {
+    opacity: 1;
+    border-color: var(--violet);
+}
+
+
+
+
+.map {
+    height: 324px;
+    width: 100%;
+}
+
+[class*="copyrights-pane"] {
+    display: none;
+}
+
+[class*="ground-pane"] {
+    filter: grayscale(1);
+}

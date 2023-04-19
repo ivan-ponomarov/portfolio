@@ -1,0 +1,20 @@
+.footer {
+    padding-bottom: 100px;
+}
+
+.footer__logo {
+    color: var(--actent-color);
+}
+
+.footer__link {
+    color: var(--secondary);
+}
+
+.footer__singup {
+    color: var(--secondary);
+    margin-right: 67px;
+}
+
+.footer__login {
+    color: var(--white);
+}

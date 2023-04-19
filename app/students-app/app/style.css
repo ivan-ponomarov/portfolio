@@ -1,0 +1,128 @@
+:root {
+    --global-color: #cfcfcf;
+}
+
+body {
+    background-color: #222;
+    color: var(--global-color);
+    font-family: sans-serif;
+}
+
+#container {
+    padding: 30px;
+}
+
+.form {
+    margin-bottom: 30px;
+}
+
+.lable {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.input-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input {
+    background-color: transparent;
+    border: 2px solid var(--global-color);
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+    color: inherit;
+
+}
+
+.input[type=date] {
+    color: inherit;
+}
+
+.error-massage {
+    position: absolute;
+    bottom: -15px;
+    left: 15px;
+    color: red;
+    font-size: 12px;
+}
+
+.btn-submit,
+.btn {
+    background-color: transparent;
+    color: inherit;
+    border: 2px solid var(--global-color);
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.delete-btn {
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    font-family: inherit;
+    font-size: 12px;
+    background-color: transparent;
+    color: inherit;
+    border: 0;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: opacity .2s ease-in-out;
+}
+
+
+table {
+    width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+
+tr {
+    position: relative;
+    border-bottom: 1px solid var(--global-color);
+}
+
+.td-learning {
+    padding-right: 55px;
+}
+
+
+
+tr:hover .delete-btn {
+    opacity: 1;
+    pointer-events: visible;
+}
+
+td,
+th {
+    padding: 10px 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #3f3f3f;
+}
+
+
+/* 
+tr:nth-child(even) td {
+    background-color: transparent;
+}
+
+tr:nth-child(odd) td {
+    background-color: transparent;
+}
+
+caption {
+    padding: 10px;
+} */

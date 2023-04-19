@@ -1,0 +1,117 @@
+.hero {
+  position: relative;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  z-index: 1;
+  background-size: cover;
+  background-position: center bottom;
+  animation: background 10s ease-in-out infinite;
+}
+
+@keyframes background {
+  0% {
+    background-image: url('../img/hero-1.jpg');
+  }
+
+  50% {
+    background-image: url('../img/hero-2.jpg');
+  }
+
+  100% {
+    background-image: url('../img/hero-3.jpg');
+  }
+
+  50% {
+    background-image: url('../img/hero-2.jpg');
+  }
+
+  0% {
+    background-image: url('../img/hero-3.jpg');
+  }
+}
+
+.hero__container {
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 45px;
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 11px;
+}
+
+.hero__descr {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 42px;
+}
+
+.hero__btn {
+  position: relative;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 100px;
+  padding: 13px 19px;
+  transition: background-color .2s ease-in-out, border .2s ease-in-out, color .2s ease-in-out;
+  background-color: var(--violet);
+}
+
+.hero__btn::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  border: 2px solid var(--violet);
+  border-radius: 100px;
+  transition: border-width .2s ease-in-out, border-color .2s ease-in-out;
+}
+
+.hero__btn::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  border: 2px solid transparent;
+  border-radius: 100px;
+  transition: left .2s ease-in-out, top .2s ease-in-out, right .2s ease-in-out, bottom .2s ease-in-out, border-color .2s ease-in-out, background-color .2s ease-in-out;
+}
+
+.hero__btn:focus-visible {
+  outline: none;
+}
+
+.hero__btn:focus-visible.hero__btn::before {
+  border-color: var(--violet);
+  left: -4px;
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+}
+
+.hero__btn:active {
+  background-color: var(--violet-darck);
+}
+
+.hero__btn:active.hero__btn:focus-visible.hero__btn::before {
+  border-color: transparent;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hero__btn:active.hero__btn::after {
+  border-color: var(--violet-light);
+  border-width: 3px;
+}

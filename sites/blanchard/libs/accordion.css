@@ -1,0 +1,227 @@
+.accordion {
+  margin-bottom: 50px;
+}
+
+.accordion__item {
+  position: relative;
+  border-top: 1px solid var(--border-grey);
+  border-bottom: 1px solid var(--border-grey);
+  transition: border-color .2s ease-out;
+  margin-bottom: -1px;
+}
+
+.accordion__item_show.accordion__item {
+  border-top-color: var(--violet-darck);
+
+}
+
+.accordion__header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  padding-top: 22px;
+  padding-bottom: 20px;
+  width: 100%;
+  transition: color .2s ease-in-out;
+}
+
+.accordion__item_show .accordion__header {
+  color: var(--violet-darck);
+}
+
+.accordion__header::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--border-grey);
+  transition: background-color .2s ease-out;
+}
+
+.accordion__item_show .accordion__header::before {
+  background-color: var(--violet-darck);
+}
+
+.accordion__arrow {
+  position: relative;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  background-color: #ececec;
+  border-radius: 100px;
+  transition: background-color .2s ease-out;
+}
+
+.accordion__arrow::after {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 9px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid;
+  border-color: transparent var(--black-color) var(--black-color) transparent;
+  transform: rotate(45deg);
+  transition: all .1s ease-out;
+}
+
+.accordion__item_show .accordion__arrow::after {
+  top: 13px;
+}
+
+.accordion__arrow::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 100px;
+  border: 2px solid transparent;
+  transition: border-color .2s ease-out;
+}
+
+.accordion__item_show .accordion__arrow {
+  background-color: var(--violet-light);
+}
+
+.accordion__item_show .accordion__arrow::after {
+  border-color: var(--black-color) transparent transparent var(--black-color);
+}
+
+.accordion__item_show .accordion__arrow::before {
+  border-color: var(--violet);
+}
+
+.accordion__body {
+  padding-top: 22px;
+  padding-bottom: 20px;
+  transition: padding-top .2s ease-out, padding-bottom .2s ease-out;
+}
+
+.accordion__item:not(.accordion__item_show) .accordion__body {
+  display: none;
+}
+
+.accordion__date {
+  position: relative;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.accordion__date::after {
+  content: '';
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  background-color: transparent;
+  z-index: -1;
+  transition: background-color .2s ease-in-out;
+}
+
+.accordion__list-link {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  transition: color .2s ease-in-out;
+}
+
+.accordion__list-link--active {
+  color: var(--violet);
+}
+
+.accordion__list-link--active {
+  color: var(--violet);
+}
+
+.accordion__list-link::after {
+  content: '';
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  background-color: transparent;
+  z-index: -1;
+  transition: background-color .2s ease-in-out;
+}
+
+.accordion__list-link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 1px;
+  background-color: transparent;
+  transition: background-color .2s ease-in-out;
+}
+
+.accordion__list-link--active.accordion__list-link::before {
+  background-color: var(--violet);
+}
+
+
+.accordion__header:focus-visible {
+  outline: none;
+}
+
+
+.accordion__header:focus-visible .accordion__arrow {
+  background-color: var(--violet-light);
+}
+
+.accordion__header:focus-visible {
+  outline: none;
+  color: var(--white-color);
+}
+
+.accordion__header:focus-visible .accordion__date::after {
+  background-color: var(--violet);
+}
+
+.accordion__header:active {
+  color: var(--violet);
+}
+
+.accordion__header:active .accordion__date::after {
+  background-color: transparent;
+}
+
+
+.accordion__list-link:focus-visible {
+  outline: none;
+}
+
+
+.accordion__list-link:focus-visible .accordion__arrow {
+  background-color: var(--violet-light);
+}
+
+.accordion__list-link:focus-visible {
+  outline: none;
+  color: var(--white-color);
+}
+
+.accordion__list-link:focus-visible.accordion__list-link::after {
+  background-color: var(--violet);
+}
+
+.accordion__list-link:active.accordion__list-link::after {
+  background-color: transparent;
+}
+
+.accordion__list-link:active {
+  color: var(--violet-darck);
+}
+
+.accordion__list-link:active.accordion__list-link::before {
+  background-color: var(--violet-darck);
+}
